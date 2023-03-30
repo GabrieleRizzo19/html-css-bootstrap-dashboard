@@ -1,3 +1,51 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
 header nav{
     height: 60px;    
+}
+
+
+.my-sidenav{
+    height: calc( ( var(--fix-vh) * 100 ) - 60px);
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+}
+
+.my-sidenav li{
+    margin-bottom: 0.5em;
+}
+
+#sidenav-wrapper-desktop{
+    width: 150px;
+}
+
+#sidenav-wrapper-mobile{
+    width: 65px;
+}
+
+main{
+    height: calc( ( var(--fix-vh) * 100 ) - 60px);
+    margin-left: 65px;
+}
+
+@media screen and (min-width: 992px){
+    main{
+        margin-left: 150px;
+    }
+}
+
+#main-header{
+    background-color: blue;
 }
