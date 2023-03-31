@@ -59,6 +59,13 @@ main{
     color: grey;
 }
 
-.offcanvas-lg {
-    --bs-offcanvas-width: 50vw !important;
+.my-offcanvas-size {
+    width: 100% !important;
+}
+
+@media screen and (min-width: 992px;) {
+    
+    .my-offcanvas-size {
+        width: 50% !important;
+    }
 }
