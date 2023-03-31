@@ -60,14 +60,5 @@ main{
 }
 
 .offcanvas-lg {
-    --bs-offcanvas-width: 50vh !important;
+    --bs-offcanvas-width: 50vw !important;
 }
-/* .offcanvas-size-xxl {
-    --bs-offcanvas-width: min(95vw, 90vw) !important;
-}
-.offcanvas-size-md { /* add Responsivenes to default offcanvas */
-    --bs-offcanvas-width: min(95vw, 400px) !important;
-}
-.offcanvas-size-sm {
-    --bs-offcanvas-width: min(95vw, 250px) !important;
-} */
