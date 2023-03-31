@@ -90,24 +90,24 @@
             <div id="sidenav-wrapper-desktop" class="my-sidenav d-none d-lg-flex flex-column justify-content-between py-4">
                 <div class="aside-top d-flex justify-content-center">
                     <ul>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-house"></i></a>
-                            Home
+                        <li class="p-2">
+                            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa-regular fa-star"></i></a>
-                            Stats
+                        <li class="p-2">
+                            <a href="#"><i class="fa-regular fa-star"></i> Stats</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa-solid fa-signal"></i></a>
-                            Signals
+                        <li class="p-2">
+                            <a href="#"><i class="fa-solid fa-signal"></i> Signals</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="aside-bottom d-flex justify-content-center">
-                    <a href="#"><i class="fa-solid fa-gear"></i></a>
-                    <span>Admin</span>
+                    <ul>
+                        <li class="p-2">
+                            <a href="#"><i class="fa-solid fa-gear"></i> Admin</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -116,7 +116,7 @@
         <main>
             <div class="container-fluid">
                 <div id="main-header" class="row justify-content-between align-items-center bg-primary text-white py-4">
-                    <div class="col12 col-lg-3 text-lg-center order-lg-last mb-3">
+                    <div class="col12 col-md-3 text-lg-center order-md-last mb-3">
                         <span>Nuovo Studente</span>
                         <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="fa-solid fa-plus"></i>
@@ -128,24 +128,71 @@
                             </div>
                             <div class="offcanvas-body text-dark">
                                 <div class="container-fluid">
-                                <form></form>
-                                    <div class="row">
-                                            <div class="col-12 col-lg-6 text-start">
-                                                <label class="pb-1" for="first-name">Nome</label>
-                                                <input class="w-100" type="text" id="first-name" name="first-name" required>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="first-name">Nome</label>
+                                                <input class="form-control" type="text" id="first-name" name="first-name" required>
                                             </div>
-                                            <div class="col-12 col-lg-6 text-start">
-                                                <label class="pb-1" for="last-name">Cognome</label>
-                                                <input class="w-100" type="text" id="last-name" name="last-name" required>
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="last-name">Cognome</label>
+                                                <input class="form-control" type="text" id="last-name" name="last-name" required>
                                             </div>
-
-                                        
-                                    </div>
+                                            <div class="col-12 col-md-6 text-start">
+                                                <label class="form-label" for="email">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="email" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="password">Password</label>
+                                                <input class="form-control" type="password" id="password" name="last-name" required>
+                                            </div>
+                                            <div class="col-12 text-start mb-3">
+                                                <label class="form-label" for="address">Indirizzo</label>
+                                                <input class="form-control" type="text" id="address" name="last-name" required>
+                                            </div>
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="city">Città</label>
+                                                <input class="form-control" type="text" id="city" name="last-name" required>
+                                            </div>
+                                            <div class="col-12 col-md-4 text-start mb-3">
+                                                <label class="form-label" for="state">Stato</label>
+                                                <select class="form-select" name="state" id="state">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="it">Italia</option>
+                                                    <option value="en">Regno Unito</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-md-2 mb-3">
+                                                <label class="form-label" for="cap">CAP</label>
+                                                <input class="form-control" type="text" id="cap" name="last-name" required>
+                                            </div>
+                                            <div class="col-12 text-start mb-3">
+                                                    <label class="form-label" for="file">Foto</label>
+                                                    <input type="file" id="file" class="form-control" required>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="form-check text-start ps-4">
+                                                    <input class="form-check-input" type="checkbox" value="" id="select-continue" required>
+                                                    <label class="form-check-label" for="select-continue">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-start">
+                                                <input class="btn btn-primary" type="submit" value="Salva">
+                                                <input class="btn btn-warning" type="reset" value="Svuota">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col12 col-lg-6 mb-3">
+                    <div class="col12 col-md-3 col-lg-6 mb-3">
                         <div>
                             <span class="h2">Boolean</span>
                             <span class="badge bg-info rounded-4"> Piano blaze</span>
@@ -153,13 +200,14 @@
                         <div>
                             <span class="badge bg-info rounded-4">3 app</span>
                             &#187;
-                            <span class="badge bg-info rounded-4">Boolean Mobile App</span>
-                            <span class="badge bg-info rounded-4">Boolean Web App</span>
-                            <span class="badge bg-info rounded-4">Boolean Blog App</span>
+                            <span class="badge bg-info rounded-4 d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                            <span class="badge bg-info rounded-4 d-none d-lg-inline-block">Boolean Mobile App</span>
+                            <span class="badge bg-info rounded-4 d-none d-lg-inline-block">Boolean Web App</span>
+                            <span class="badge bg-info rounded-4 d-none d-lg-inline-block">Boolean Blog App</span>
                             
                         </div>
                     </div>
-                    <div class="col12 col-lg-3 mb-3">
+                    <div class="col12 col-md-3 mb-3">
                         <div>
                             Studenti online negli ultimi 30 minuti
                         </div>
@@ -364,7 +412,7 @@
                                 <h2>Todo</h2>
                             </div>
                             <div class="card-body">
-                                <ul class="list-group list-group-flush border rounded-1">
+                                <ul id="check-card" class="list-group list-group-flush border rounded-1">
                                     <li class="list-group-item">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="new-class">
@@ -375,17 +423,17 @@
                                     </li>
                                     <li class="list-group-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="new-class">
-                                            <label class="form-check-label" for="new-class">
+                                            <input class="form-check-input" type="checkbox" value="" id="lesson">
+                                            <label class="form-check-label" for="lesson">
                                                 Lezione su Bootstrap 5 in classe #75
                                             </label>
                                         </div>
                                     </li>
                                     <li class="list-group-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="new-class">
-                                            <label class="form-check-label" for="new-class">
-                                                Kickoff nuove classi
+                                            <input class="form-check-input" type="checkbox" value="" id="github-student">
+                                            <label class="form-check-label" for="github-student">
+                                                Controllare username GitHub studenti
                                             </label>
                                         </div>
                                     </li>
@@ -406,6 +454,9 @@
                                     <li class="list-group-item">Gennaio: 1200</li>
                                     <li class="list-group-item">Febbraio: 800</li>
                                     <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item">
+                                        <a class="link-primary text-decoration-underline" href="#">Visualizza report approfondito</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
