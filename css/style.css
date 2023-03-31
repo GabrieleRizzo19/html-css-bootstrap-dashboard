@@ -37,6 +37,7 @@ header nav{
 
 main{
     height: calc( ( var(--fix-vh) * 100 ) - 60px);
+    overflow-y: auto;
     margin-left: 65px;
 }
 
