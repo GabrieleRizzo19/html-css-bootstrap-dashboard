@@ -12,6 +12,9 @@ header nav{
     height: 60px;    
 }
 
+#my-searchbar{
+    background-color: #e5e5e5;
+}
 
 .my-sidenav{
     height: calc( ( var(--fix-vh) * 100 ) - 60px);
@@ -47,6 +50,11 @@ main{
     }
 }
 
-#main-header{
-    background-color: blue;
+.my-table-icon{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid grey;
+    /* border-radius: 5px; */
+    color: grey;
 }
